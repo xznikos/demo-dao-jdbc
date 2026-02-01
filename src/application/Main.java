@@ -8,7 +8,8 @@ public class Main {
     static void main() {
         SellerDao sellerDao = DaoFactory.createSellerDao();
 
-        Seller seller = sellerDao.findById(3);
+        System.out.println("==Find by iD: ");
+        Seller seller = sellerDao.findById(2);
 
         System.out.println(seller);
     }
